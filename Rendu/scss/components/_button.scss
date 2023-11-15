@@ -1,0 +1,12 @@
+@use '../abstracts/_variables' as *;
+
+@mixin button($background-color: $color-light-green, $color: $color-white) {
+    background-color: $background-color;
+    color: $color;
+    font-size: 24px;
+    font-weight: semi-bold;
+    height: 61px;
+    width: 256px;
+    border: none;
+    border-radius: 12px;
+}

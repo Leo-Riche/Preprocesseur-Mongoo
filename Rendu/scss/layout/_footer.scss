@@ -1,0 +1,21 @@
+@use '../base/_typography' as *;
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_mixins' as *;
+
+footer {
+    height: 290px;
+    background-color: $color-light-green;
+    padding-left: 39.5px;
+    padding-right: 97px;
+    @include display-flex($justify: space-between);
+
+    h3 {
+      font-size: 27px;
+      color: $color-white;
+    }
+
+    p {
+        font-size: $font-body-size;
+        color: $color-white;
+    }
+}

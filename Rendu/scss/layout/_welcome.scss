@@ -1,0 +1,29 @@
+@use '../base/_typography' as *;
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_mixins' as *;
+@use '../components/_button' as *;
+
+.welcome {
+    background-image: url("../images/61842.png");
+    @include display-flex;
+    padding-left: 148px;
+    
+    .welcome-text {
+        @include display-flex-column($align: flex-start);
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: $font-title-size;
+        color: $color-light-green;
+    }
+    
+    p {
+        font-size: $font-body-size;
+        color: $color-grey;
+    }
+    
+    button {
+        @include button();
+    }
+}

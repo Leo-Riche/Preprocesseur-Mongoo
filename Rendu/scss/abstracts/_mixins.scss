@@ -1,0 +1,14 @@
+@use '../abstracts/_variables' as *;
+
+@mixin display-flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display-flex-column($justify: center, $align: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome {
+  background-image: url("../images/61842.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 148px;
+}
+.welcome .welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.welcome h2 {
+  font-size: 52px;
+  color: #B2D234;
+}
+.welcome p {
+  font-size: 18px;
+  color: #606060;
+}
+.welcome button {
+  background-color: #B2D234;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: semi-bold;
+  height: 61px;
+  width: 256px;
+  border: none;
+  border-radius: 12px;
+}
+
+.accroche {
+  background-image: url("../images/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  background-size: cover;
+  height: 809px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 154px;
+}
+.accroche .accroche-preparation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgba(178, 210, 52, 0.85);
+  padding: 37px 68px 48px;
+  width: 632px;
+}
+.accroche .accroche-preparation h2 {
+  font-size: 52px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.accroche .accroche-preparation p {
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.accroche .accroche-preparation button {
+  background-color: #FFFFFF;
+  color: #B2D234;
+  font-size: 24px;
+  font-weight: semi-bold;
+  height: 61px;
+  width: 256px;
+  border: none;
+  border-radius: 12px;
+}
+
+.preparations {
+  background-image: url("../images/louis-hansel-MlPD-AzZYMg-unsplash.png");
+  background-size: cover;
+}
+
+footer {
+  height: 290px;
+  background-color: #B2D234;
+  padding-left: 39.5px;
+  padding-right: 97px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h3 {
+  font-size: 27px;
+  color: #FFFFFF;
+}
+footer p {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
