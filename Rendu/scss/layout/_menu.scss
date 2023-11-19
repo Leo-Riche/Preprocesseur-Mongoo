@@ -1,0 +1,97 @@
+@use '../base/_typography' as *;
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_mixins' as *;
+@use '../components/button' as *;
+
+.menu {
+    background-image: url("../images/pattern.png");
+    padding-bottom: 80px;
+    
+    .menu-heading {
+        @include display-flex-column;
+        gap: 30px;
+        padding-top: 71px;
+        text-align: center;
+    
+        .menu-title {
+            color: $color-light-green;
+            font-size: $font-title-size;
+            padding-bottom: 32px;
+        }
+    
+        .menu-text {
+            font-size: $font-body-size;
+        }
+    }
+
+    .menu-sections {
+        @include display-flex;
+        gap: 180px;
+        padding-top: 87px;
+        padding-bottom: 81px;
+    }
+}
+
+.menu-left-section {
+
+    .menu-groupe {
+        padding: 12px;
+        width: 502px;
+    
+        .groupe-title {
+            @include display-flex($justify: space-between);
+            color: $color-light-green;
+            font-size: 24px;
+        }
+
+        .groupe-text {
+            font-size: 18px;
+        }
+    }
+
+    .etiquette {
+        @include display-flex($justify: flex-end);
+    }
+
+    .etiquette-meilleure-vente {
+        display: block;
+        width: 124px;
+        height: 24px;
+        padding-top: 4px;
+        background-color: $color-light-green;
+        color: $color-white;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .meilleure-vente {
+        border: 1px solid $color-light-green;
+    }
+}
+
+.menu-right-section {
+    @include display-flex-column;
+    gap: 72px;
+
+    .right-section-title {
+        font-size: 64px;
+        transform: rotate(-9deg);
+    }
+
+    .right-section-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .title-green {
+        color: $color-light-green;
+    }
+
+    .title-blue {
+        color: $color-light-blue;
+    }
+
+    button {
+        @include button($width: 358px);   
+    }
+}

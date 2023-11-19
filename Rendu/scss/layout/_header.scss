@@ -1,0 +1,66 @@
+@use '../base/_typography' as *;
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_mixins' as *;
+@use '../components/button' as *;
+
+.header {
+    background:linear-gradient(150deg, rgba(96, 160, 216, 0.7), rgba(178, 210, 52, 0.7)), url('../images/header-back.png');
+    background-size: cover;
+    height: 100vh;
+    @include display-grid($grid-template-column: 1fr, $grid-template-row: auto);
+    
+    .header-menu {
+        @include display-flex($justify: space-between, $align: center);
+        padding: 24px 40px;
+        height: 72px;
+        
+        .logo {
+            width: 200px;
+            padding-top: 24px;
+        }
+    
+        .nav-right {
+            @include display-flex;
+            gap: 50px;
+        
+            a {
+                color: $color-white;
+                font-size: $font-body-size;
+                text-decoration: none;
+            }
+
+            .underline {
+                margin-top: 10px;
+                text-decoration: underline;
+            }
+        
+            button {
+                @include button($color-white, $color-light-green, $width: 160px, $height: 40px,$font-size: 15px);
+            }
+        }
+    }
+    
+    
+    .header-tagline {
+        @include display-flex-column;
+    
+        .title {
+            font-size: 126px;
+            font-weight: bold;
+            color: $color-white;
+        }
+    
+        .slogan {
+            font-size: $font-title-size;
+            color: $color-white;
+            transform: rotate(-9deg);
+            padding-left: 240px;
+        }
+    }
+    
+    .header-social-links {
+        @include display-flex($justify: flex-end, $align: flex-end);
+        gap: 20px;
+        padding: 50px;
+    }
+}

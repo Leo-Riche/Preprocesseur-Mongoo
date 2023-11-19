@@ -9,6 +9,75 @@
   font-family: "Poppins", sans-serif;
 }
 
+.header {
+  background: linear-gradient(150deg, rgba(96, 160, 216, 0.7), rgba(178, 210, 52, 0.7)), url("../images/header-back.png");
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.header .header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  height: 72px;
+}
+.header .header-menu .logo {
+  width: 200px;
+  padding-top: 24px;
+}
+.header .header-menu .nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.header .header-menu .nav-right a {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+}
+.header .header-menu .nav-right .underline {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.header .header-menu .nav-right button {
+  background-color: #FFFFFF;
+  color: #B2D234;
+  font-size: 15px;
+  font-weight: semi-bold;
+  height: 40px;
+  width: 160px;
+  border: none;
+  border-radius: 12px;
+}
+.header .header-tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-tagline .title {
+  font-size: 126px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.header .header-tagline .slogan {
+  font-size: 52px;
+  color: #FFFFFF;
+  transform: rotate(-9deg);
+  padding-left: 240px;
+}
+.header .header-social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 50px;
+}
+
 .welcome {
   background-image: url("../images/61842.png");
   display: flex;
@@ -36,7 +105,7 @@
   color: #FFFFFF;
   font-size: 24px;
   font-weight: semi-bold;
-  height: 61px;
+  height: 62px;
   width: 256px;
   border: none;
   border-radius: 12px;
@@ -76,8 +145,103 @@
   color: #B2D234;
   font-size: 24px;
   font-weight: semi-bold;
-  height: 61px;
+  height: 62px;
   width: 256px;
+  border: none;
+  border-radius: 12px;
+}
+
+.menu {
+  background-image: url("../images/pattern.png");
+  padding-bottom: 80px;
+}
+.menu .menu-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 71px;
+  text-align: center;
+}
+.menu .menu-heading .menu-title {
+  color: #B2D234;
+  font-size: 52px;
+  padding-bottom: 32px;
+}
+.menu .menu-heading .menu-text {
+  font-size: 18px;
+}
+.menu .menu-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+  padding-top: 87px;
+  padding-bottom: 81px;
+}
+
+.menu-left-section .menu-groupe {
+  padding: 12px;
+  width: 502px;
+}
+.menu-left-section .menu-groupe .groupe-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #B2D234;
+  font-size: 24px;
+}
+.menu-left-section .menu-groupe .groupe-text {
+  font-size: 18px;
+}
+.menu-left-section .etiquette {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-left-section .etiquette-meilleure-vente {
+  display: block;
+  width: 124px;
+  height: 24px;
+  padding-top: 4px;
+  background-color: #B2D234;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+}
+.menu-left-section .meilleure-vente {
+  border: 1px solid #B2D234;
+}
+
+.menu-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+}
+.menu-right-section .right-section-title {
+  font-size: 64px;
+  transform: rotate(-9deg);
+}
+.menu-right-section .right-section-text {
+  font-size: 18px;
+  text-align: center;
+}
+.menu-right-section .title-green {
+  color: #B2D234;
+}
+.menu-right-section .title-blue {
+  color: #60A0D8;
+}
+.menu-right-section button {
+  background-color: #B2D234;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: semi-bold;
+  height: 62px;
+  width: 358px;
   border: none;
   border-radius: 12px;
 }
@@ -85,6 +249,126 @@
 .preparations {
   background-image: url("../images/louis-hansel-MlPD-AzZYMg-unsplash.png");
   background-size: cover;
+  height: 698px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.preparations .preparations-vertes {
+  background-color: rgba(178, 210, 52, 0.85);
+  width: 632px;
+  height: 410px;
+}
+.preparations .preparations-bleues {
+  background-color: rgba(96, 160, 216, 0.85);
+  width: 632px;
+  height: 410px;
+}
+.preparations .preparations-title {
+  font-size: 52px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.preparations .preparations-liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  list-style: none;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.form {
+  background-image: url("../images/61842.png");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 40px;
+}
+.form img {
+  padding-top: 100px;
+}
+.form button {
+  background-color: #B2D234;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: semi-bold;
+  height: 62px;
+  width: 256px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-right {
+  padding-bottom: 80px;
+}
+.form-right .headin-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 28px;
+}
+.form-right .headin-form .headin-title {
+  color: #B2D234;
+  font-size: 52px;
+  padding-bottom: 18px;
+}
+.form-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.form-top .label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form-top .label-input label {
+  color: #B2D234;
+  font-size: 24px;
+  font-style: italic;
+}
+.form-top .label-input input {
+  width: 300px;
+  border: 1px solid #606060;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.label-input label {
+  color: #B2D234;
+  font-size: 24px;
+  font-style: italic;
+}
+.label-input input {
+  width: 616px;
+  border: 1px solid #606060;
+}
+.label-input textarea {
+  width: 616px;
+  height: 200px;
+  resize: none;
 }
 
 footer {

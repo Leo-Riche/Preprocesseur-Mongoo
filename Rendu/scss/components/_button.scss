@@ -1,12 +1,12 @@
 @use '../abstracts/_variables' as *;
 
-@mixin button($background-color: $color-light-green, $color: $color-white) {
+@mixin button($background-color: $color-light-green, $color: $color-white, $width: 256px, $height:62px, $font-size: 24px) {
     background-color: $background-color;
     color: $color;
-    font-size: 24px;
+    font-size: $font-size;
     font-weight: semi-bold;
-    height: 61px;
-    width: 256px;
+    height: $height;
+    width: $width;
     border: none;
     border-radius: 12px;
 }

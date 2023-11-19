@@ -1,0 +1,81 @@
+@use '../base/_typography' as *;
+@use '../abstracts/_variables' as *;
+@use '../abstracts/_mixins' as *;
+@use '../components/button' as *;
+
+.form {
+    background-image: url("../images/61842.png");
+    @include display-grid;
+    padding: 40px;
+    
+    img {
+        padding-top: 100px;
+    }
+
+    button {
+        @include button;
+        @include display-flex;
+    }
+}
+
+.form-right {
+    padding-bottom: 80px;
+    
+    .headin-form {
+        @include display-flex-column;
+        padding-bottom: 28px;
+        
+        .headin-title {
+            color: $color-light-green;
+            font-size: $font-title-size;
+            padding-bottom: 18px;
+        }
+    }
+    
+    form {
+        @include display-flex-column;
+        gap: 24px;
+    }
+}
+
+.form-top {
+    @include display-flex($justify: space-between);
+    gap: 16px;
+
+    .label-input {
+        @include display-flex-column($align: flex-start);
+
+        label {
+            color: $color-light-green;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        input {
+            width: 300px;
+            border: 1px solid $color-grey;
+        }
+    }
+}
+
+.label-input {
+    @include display-flex-column($align: flex-start);
+
+    label {
+        color: $color-light-green;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    input {
+        width: 616px;
+        border: 1px solid $color-grey;
+    }
+
+    textarea {
+        width: 616px;
+        height: 200px;
+        resize: none;
+    }
+
+}

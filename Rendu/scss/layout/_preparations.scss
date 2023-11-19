@@ -5,4 +5,35 @@
 .preparations {
     background-image: url("../images/louis-hansel-MlPD-AzZYMg-unsplash.png");
     background-size: cover;
+    height: 698px;
+    @include display-flex;
+    gap: 16px;
+
+
+    .preparations-vertes {
+        background-color: rgba(178, 210, 52, 85%);
+        width: 632px;
+        height: 410px;
+    }
+
+    .preparations-bleues {
+        background-color: rgba(96, 160, 216, 85%);
+        width: 632px;
+        height: 410px;
+    }
+
+    .preparations-title {
+        font-size: $font-title-size;
+        color: $color-white;
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .preparations-liste {
+        @include display-grid;
+        list-style: none;
+        text-align: center;
+        color: $color-white;
+    }
 }
