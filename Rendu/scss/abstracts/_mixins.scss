@@ -18,3 +18,9 @@
     grid-template-columns: $grid-template-column;
     grid-template-rows: $grid-template-row;
 }
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}

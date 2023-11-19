@@ -6,21 +6,37 @@
 .menu {
     background-image: url("../images/pattern.png");
     padding-bottom: 80px;
+
+    @include mobile {
+        padding-bottom: 0;
+    }
     
     .menu-heading {
         @include display-flex-column;
         gap: 30px;
         padding-top: 71px;
         text-align: center;
+
+        @include mobile {
+            padding-top: 20px;
+        }
     
         .menu-title {
             color: $color-light-green;
             font-size: $font-title-size;
             padding-bottom: 32px;
+
+            @include mobile {
+                font-size: 24px;
+            }
         }
     
         .menu-text {
             font-size: $font-body-size;
+
+            @include mobile {
+                font-size: 15px;
+            }
         }
     }
 
@@ -29,23 +45,44 @@
         gap: 180px;
         padding-top: 87px;
         padding-bottom: 81px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
 }
 
 .menu-left-section {
 
+    @include display-flex-column;
+
     .menu-groupe {
         padding: 12px;
         width: 502px;
+
+        @include mobile {
+            width: 100%;
+        }
     
         .groupe-title {
             @include display-flex($justify: space-between);
             color: $color-light-green;
             font-size: 24px;
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
 
         .groupe-text {
             font-size: 18px;
+
+            @include mobile {
+                font-size: 15px;
+            }
         }
     }
 
@@ -62,10 +99,21 @@
         color: $color-white;
         font-size: 12px;
         text-align: center;
+
+        @include mobile {
+            width: 100px;
+            height: 20px;
+            padding-top: 2px;
+            font-size: 10px;
+        }
     }
 
     .meilleure-vente {
         border: 1px solid $color-light-green;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 }
 
@@ -73,14 +121,26 @@
     @include display-flex-column;
     gap: 72px;
 
+    @include mobile {
+        gap: 20px;
+    }
+
     .right-section-title {
         font-size: 64px;
         transform: rotate(-9deg);
+        
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     .right-section-text {
         font-size: 18px;
         text-align: center;
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
 
     .title-green {
@@ -92,6 +152,6 @@
     }
 
     button {
-        @include button($width: 358px);   
+        @include button($width: 358px);
     }
 }

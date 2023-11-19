@@ -8,20 +8,40 @@
     background-size: cover;
     height: 100vh;
     @include display-grid($grid-template-column: 1fr, $grid-template-row: auto);
+
+    @include mobile {
+        @include display-flex-column($justify: space-between, $align: center);
+        padding: 20px;
+    }
     
     .header-menu {
         @include display-flex($justify: space-between, $align: center);
         padding: 24px 40px;
         height: 72px;
+
+        @include mobile {
+            @include display-flex-column();
+            padding: 20px;
+            height: auto;
+        }
         
         .logo {
             width: 200px;
             padding-top: 24px;
+
+            @include mobile {
+                padding-bottom: 24px;
+            }
         }
     
         .nav-right {
             @include display-flex;
             gap: 50px;
+
+            @include mobile {
+                @include display-flex-column;
+                gap: 20px;
+            }
         
             a {
                 color: $color-white;
@@ -48,6 +68,10 @@
             font-size: 126px;
             font-weight: bold;
             color: $color-white;
+
+            @include mobile {
+                font-size: 40px;
+            }
         }
     
         .slogan {
@@ -55,6 +79,11 @@
             color: $color-white;
             transform: rotate(-9deg);
             padding-left: 240px;
+
+            @include mobile {
+                font-size: 20px;
+                padding-left: 0;
+            }
         }
     }
     

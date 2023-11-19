@@ -7,34 +7,62 @@
     background-image: url("../images/61842.png");
     @include display-grid;
     padding: 40px;
+
+    @include mobile {
+        padding: 20px;
+        display: block;
+    }
     
     img {
         padding-top: 100px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     button {
         @include button;
-        @include display-flex;
+        
+        @include mobile {
+            width: 100%;
+        }
     }
 }
 
 .form-right {
     padding-bottom: 80px;
+
+    @include mobile {
+        padding-bottom: 0;
+    }
     
     .headin-form {
         @include display-flex-column;
         padding-bottom: 28px;
+
+        @include mobile {
+            padding-bottom: 20px;
+        }
         
         .headin-title {
             color: $color-light-green;
             font-size: $font-title-size;
             padding-bottom: 18px;
+        
+            @include mobile {
+                font-size: 24px;
+            }
         }
     }
     
     form {
         @include display-flex-column;
         gap: 24px;
+
+        @include mobile {
+            gap: 20px;
+        }
     }
 }
 
@@ -45,15 +73,27 @@
     .label-input {
         @include display-flex-column($align: flex-start);
 
+        @include mobile {
+            width: 100%;
+        }
+
         label {
             color: $color-light-green;
             font-size: 24px;
             font-style: italic;
+
+            @include mobile {
+                font-size: 15px;
+            }
         }
 
         input {
             width: 300px;
             border: 1px solid $color-grey;
+
+            @include mobile {
+                width: 100%;
+            }
         }
     }
 }
@@ -61,21 +101,37 @@
 .label-input {
     @include display-flex-column($align: flex-start);
 
+    @include mobile {
+        width: 100%;
+    }
+
     label {
         color: $color-light-green;
         font-size: 24px;
         font-style: italic;
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
 
     input {
         width: 616px;
         border: 1px solid $color-grey;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     textarea {
         width: 616px;
         height: 200px;
         resize: none;
+    
+        @include mobile {
+            width: 100%;
+        }
     }
 
 }

@@ -9,13 +9,29 @@ footer {
     padding-right: 97px;
     @include display-flex($justify: space-between);
 
+    @include mobile {
+        flex-direction: column;
+        gap: 20px;
+        align-items: self-start;
+        height: 100%;
+        padding: 20px;
+    }
+
     h3 {
       font-size: 27px;
       color: $color-white;
+
+      @include mobile {
+        font-size: 24px;
+      }
     }
 
     p {
         font-size: $font-body-size;
         color: $color-white;
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
 }

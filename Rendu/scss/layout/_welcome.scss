@@ -7,23 +7,52 @@
     background-image: url("../images/61842.png");
     @include display-flex;
     padding-left: 148px;
+
+    @include mobile {
+        padding-left: 20px;
+    }
     
     .welcome-text {
         @include display-flex-column($align: flex-start);
         gap: 40px;
+
+        @include mobile {
+            gap: 20px;
+        }
     }
 
     h2 {
         font-size: $font-title-size;
         color: $color-light-green;
+
+        @include mobile {
+            font-size: 24px;
+        }
     }
     
     p {
         font-size: $font-body-size;
         color: $color-grey;
+
+        @include mobile {
+            font-size: 15px;
+        }
     }
     
     button {
         @include button();
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 10px;
+
+            @include button($width: 90% );
+        }
+    }
+
+    img {
+        @include mobile {
+            display: none;
+        }
     }
 }
